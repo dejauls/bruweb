@@ -126,8 +126,8 @@
                     <!-- Text Section -->
                     <div class="text-between lg:text-left pt-64 md:pt-8  ">
 
-                        <h2 class="text-5xl font-bold text-gray-100 mb-4"> <span class="typed-text"
-                                data-strings='["TENTANG KAMI"]'></span></h2>
+                        <h2 class="text-2xl md:text-5xl font-bold text-gray-100 mb-0 md:mb-4"> <span class="typed-text"
+                                data-strings='["TENTANG KAMI.."]'></span></h2>
                         <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4">
                             PT. Bata Ringan Utama adalah pionir dalam produksi AAC Block (Autoclaved Aerated Concrete
                             Block), atau yang lebih dikenal sebagai Beton Ringan (Bata Ringan), serta Dry Mortar (Mortar
@@ -169,11 +169,11 @@
         </div>
     </section>
 
-    <section class="bg-gray-800 text-white py-4 md:py-12 relative md:max-h-screen">
-        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div class="flex justify-center p-8">
+    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen">
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-70"></div> -->
+        <div class="flex justify-center">
 
-            <h2 class="text-white text-center text-lg md:text-3xl font-bold z-[999] mb-2 md:mb-8">Temukan berbagai
+            <h2 class="text-white text-center text-lg md:text-3xl font-bold z-[999] mb-0 md:mb-8">Temukan berbagai
                 kebutuhan produk material
                 anda di<span class="text-red-500"> BRU MORTAR</span></h2>
         </div>
@@ -227,21 +227,71 @@
 
 
 
-    <section class="flex min-h-screen bg-black/90 py-8">
+    <section class="flex flex-col md:flex-row min-h-screen bg-slate-900 py-8">
         <!-- Left Section -->
-        <div class="w-1/2   text-white p-8">
-
-            <div class="bg-white bg-opacity-10 p-8 relative z-10">
+        <div class="w-full md:w-1/2 text-white p-8 ">
+            <div class="bg-white bg-opacity-10 p-8 relative z-10 ">
                 <h2 class="text-3xl font-bold text-white mb-6 text-center">Kenapa Memilih Kami</h2>
-                <div class="space-y-4">
+                <div class=" md:hidden flex grid grid-cols-2 gap-2">
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
+                        <span class="text-white mr-4 pb-4">
+                            <i class="fas fa-leaf text-xl"></i> <!-- Ikon ramah lingkungan -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center">Produk Berkualitas & Ramah Lingkungan</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md ">
+                        <span class="text-white mr-4">
+                            <i class="fas fa-chalkboard-teacher text-xl"></i> <!-- Ikon edukasi -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center">Melakukan Edukasi Penggunaan Bata ringan Utama
+                                dan Produk Mortar</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
+                        <span class="text-white mr-4">
+                            <i class="fas fa-tools text-xl"></i> <!-- Ikon pelayanan teknis -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center">Memberikan Pelayanan Teknis Material </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
+                        <span class="text-white mr-4">
+                            <i class="fas fa-tools text-xl"></i> <!-- Ikon pelayanan teknis -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center"> Memberi Edukasi Pekerja dan Pengawasan Dalam Pemasangan</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
+                        <span class="text-white mr-4">
+                            <i class="fas fa-cogs text-xl"></i> <!-- Ikon teknologi -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center">Manajemen Pabrik Senantiasa Mempertahankan
+                                Kualitas Produk</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
+                        <span class="text-white mr-4">
+                            <i class="fas fa-clock text-xl"></i> <!-- Ikon responsif -->
+                        </span>
+                        <div>
+                            <h3 class="text-xs font-semibold text-white text-center">Senantiasa Memberikan Respon Cepat Kepada Client </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 hidden md:block">
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
                         <span class="text-white mr-4">
                             <i class="fas fa-leaf text-3xl"></i> <!-- Ikon ramah lingkungan -->
                         </span>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Produk Berkualitas & Ramah
-                                Lingkungan</h3>
-                             
+                            <h3 class="text-xl font-semibold text-white">Produk Berkualitas & Ramah Lingkungan</h3>
                         </div>
                     </div>
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -249,9 +299,8 @@
                             <i class="fas fa-chalkboard-teacher text-3xl"></i> <!-- Ikon edukasi -->
                         </span>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Melakukan Edukasi 
-                                Penggunaan Bata ringan Utama dan Produk Mortar</h3>
-                             
+                            <h3 class="text-xl font-semibold text-white">Melakukan Edukasi Penggunaan Bata ringan Utama
+                                dan Produk Mortar</h3>
                         </div>
                     </div>
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -259,9 +308,8 @@
                             <i class="fas fa-tools text-3xl"></i> <!-- Ikon pelayanan teknis -->
                         </span>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Memberikan Pelayanan Kepada Kontraktor 
-                                Mulai Dari Teknis Material, Pengedukasian Pekerja, dan Pengawasan Dalam Pemasangan</h3>
-                            
+                            <h3 class="text-xl font-semibold text-white">Memberikan Pelayanan Kepada Kontraktor Mulai
+                                Dari Teknis Material, Pengedukasian Pekerja, dan Pengawasan Dalam Pemasangan</h3>
                         </div>
                     </div>
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -269,8 +317,8 @@
                             <i class="fas fa-cogs text-3xl"></i> <!-- Ikon teknologi -->
                         </span>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Manajemen Pabrik Senantiasa Mempertahankan Kualitas Produk</h3>
-                             
+                            <h3 class="text-xl font-semibold text-white">Manajemen Pabrik Senantiasa Mempertahankan
+                                Kualitas Produk</h3>
                         </div>
                     </div>
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -279,41 +327,39 @@
                         </span>
                         <div>
                             <h3 class="text-xl font-semibold text-white">Respon Cepat Kepada Client</h3>
-                             
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-
-        <!-- Right Section -->
-        <div class="w-2/3 bg-orange-500 p-8 relative">
+        <div class="w-full md:w-1/2 lg:w-2/3 bg-orange-500 p-8 relative mt-8 md:mt-0 hidden md:block">
             <img src="/static/img/pabrik2.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
-
         </div>
     </section>
+
     <section>
-        
+
     </section>
-     
-    <section class="bg-black text-white py-16 ">
-        <div class="container mx-auto text-center mb-12"  style="background-image: url('/static/img/produk/');">
+
+    <section class="bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900 text-white py-16 ">
+        <div class="container mx-auto text-center mb-12">
             <h1 class="text-4xl font-extrabold text-orange-500">BATA RINGAN</h1>
         </div>
-        <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             <!-- Left Section (Text Section for Mobile, Right Section for Desktop) -->
             <div class="lg:w-1/3 text-center lg:text-left mb-8 lg:mb-0">
                 <h2 class="text-2xl font-bold text-orange-500 mb-4">EKONOMIS</h2>
-                <p class="mb-4"> Penggunaan Bata Ringan pada bangunan dapat menghemat waktu, tenaga, dan biaya. Produk ini tidak hanya ringan tetapi mudah dipasang karena ukuran yang presisi.  </p>
-                
+                <p class="mb-4"> Penggunaan Bata Ringan pada bangunan dapat menghemat waktu, tenaga, dan biaya. Produk
+                    ini tidak hanya ringan tetapi mudah dipasang karena ukuran yang presisi. </p>
+
             </div>
-    
+
             <!-- Middle Section with Image -->
             <div class="lg:w-1/3 flex justify-center mb-8 lg:mb-0 m-4 bg-white">
                 <img src="/static/img/bataringan.jpg" alt="Bata Ringan" class="w-full h-auto">
             </div>
-    
+
             <!-- Right Section (Text Section for Desktop) -->
             <div class="lg:w-1/3 text-center lg:text-right">
                 <h2 class="text-2xl font-bold text-orange-500 mb-4">DAYA TAHAN TINGGI</h2>
@@ -322,7 +368,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="bg-gray-900 text-white py-12">
         <h2 class="text-4xl font-bold text-center text-white mb-12">Mengapa Harus Menggunakan BATA RINGAN BRU ?</h2>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -375,7 +421,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -490,7 +536,8 @@
                         <p class="text-sm text-gray-500">NEW</p> -->
                     </div>
                 </div>
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-7 lg:order-8">
+                <div
+                    class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-7 lg:order-8">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/thinbed.webp" alt="Product Image"
                         class="w-full h-40 md:h-96 object-cover rounded-t">
@@ -504,7 +551,7 @@
         </div>
     </section>
 
-    
+
 
 
 
@@ -610,13 +657,14 @@
             <textarea id="message"
                 class=" p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-40 sm:h-32 md:w-56 md:h-40"
                 placeholder="Tulis pesan Anda..."></textarea>
-    
+
             <button id="sendButton"
                 class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
         </div>
         <button id="whatsappButton"
             class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" class="sm:w-12  sm:h-12 md:w-20  md:h-20">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                class="sm:w-12  sm:h-12 md:w-20  md:h-20">
                 <path fill="#fff"
                     d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
                 </path>
@@ -635,7 +683,7 @@
             </svg>
         </button>
     </div>
-    
+
     <script>
         document.getElementById('whatsappButton').addEventListener('click', function () {
             var form = document.getElementById('whatsappForm');
@@ -658,7 +706,7 @@
     <footer class="bg-black text-white ">
         <div class="container mx-auto   flex flex-wrap justify-center py-12">
             <!-- Logo Section -->
-            <div class="w-full md:w-1/4 mb-8 md:mb-0 flex justify-center">
+            <div class="w-full md:w-1/4 flex justify-center">
                 <img src="/static/img/BRULogo.png" alt="Logo" class="mb-4 h-60 ">
 
 
@@ -679,7 +727,7 @@
             </div>
 
             <!-- Menu Section -->
-            <div class="w-full md:w-1/4 mb-8 md:mb-0 pl-8 text-center">
+            <div class="w-full md:w-1/4 mb-8 md:mb-0 text-center">
                 <h3 class="text-lg font-bold mb-4">CONTACT US</h3>
                 <p class="text-gray-400 mb-2">Phone: +62 852-6046-0580
                 </p>
@@ -689,7 +737,7 @@
             </div>
 
             <!-- Contact Section -->
-            <div class="w-full md:w-1/4 mb-8 md:mb-0 z-10  text-center">
+            <div class="w-full md:w-1/4 z-10  text-center">
                 <h3 class="text-lg font-bold mb-4">FOLLOW US</h3>
                 <div class="flex space-x-4 justify-center">
 
