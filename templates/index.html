@@ -28,7 +28,14 @@
         .overlay {
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -39,22 +46,21 @@
 
     <!-- Navbar -->
     <nav
-        class="flex items-center justify-between p-1 md:p-6 absolute w-full z-10 bg-gradient-to-b from-stone-100/50 to-transparent">
-        <div class="flex items-center  md:space-x-4 ml-0 md:ml-4">
+        class="flex items-center justify-between p-1 md:p-6 w-full z-20 bg-gradient-to-b from-stone-100/50 to-transparent  fixed md:absolute top-0">
+        <div class="flex items-center md:space-x-4 ml-0 md:ml-4">
             <img src="/static/img/logobadakbru.png" alt="Logo" class="h-16 sm:h-24 md:h-28">
             <img src="/static/img/bruaja.png" alt="Logo" class="h-20 sm:h-24 md:h-28">
-            <!-- <span class="text-white font-bold text-xl">BRU MORTAR</span> -->
         </div>
         <div class="hidden md:flex space-x-6 font-bold mr-12">
-            <a href="#" class="text-white text-sm sm:text-xl">HOME</a>
-            <a href="#" class="text-white text-sm sm:text-xl">ABOUT US</a>
-            <a href="#" class="text-white text-sm sm:text-xl">PRODUCT</a>
-            <a href="#" class="text-white text-sm sm:text-xl">PORTOFOLIO</a>
-            <a href="#" class="text-white text-sm sm:text-xl">CONTACT</a>
+            <a href="/" class="text-white text-sm sm:text-xl">HOME</a>
+            <a href="#about" class="text-white text-sm sm:text-xl">ABOUT US</a>
+            <a href="#produk" class="text-white text-sm sm:text-xl">PRODUCT</a>
+            <a href="#porto" class="text-white text-sm sm:text-xl">PORTOFOLIO</a>
+            <a href="#kontak" class="text-white text-sm sm:text-xl">CONTACT</a>
         </div>
         <!-- Mobile Menu (Hidden by default, shown on small screens) -->
         <div class="md:hidden flex items-center mr-4">
-            <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30">
                 <!-- Icon for mobile menu -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -62,31 +68,39 @@
                 </svg>
             </button>
         </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-20 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold">
+                <a href="/" class="text-lg">HOME</a>
+                <a href="#about" class="text-lg">ABOUT US</a>
+                <a href="#produk" class="text-lg">PRODUCT</a>
+                <a href="#porto" class="text-lg">PORTOFOLIO</a>
+                <a href="#kontak" class="text-lg">CONTACT</a>
+            </div>
+        </div>
     </nav>
 
+
+
     <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden bg-stone-100/90 text-black absolute top-0 left-0 w-full z-20">
-        <div class="flex flex-col items-start p-4 space-y-4">
-            <a href="#" class="text-lg">HOME</a>
-            <a href="#" class="text-lg">ABOUT US</a>
-            <a href="#" class="text-lg">PRODUCT</a>
-            <a href="#" class="text-lg">PORTOFOLIO</a>
-            <a href="#" class="text-lg">CONTACT</a>
-        </div>
-    </div>
+
 
     <!-- Hero Section -->
     <section class="hero-bg relative flex items-center h-[100vh] sm:h-[100vh] md:h-screen">
         <div class="overlay absolute inset-0"></div>
         <div
             class="relative z-20 text-left text-white max-w-xl sm:max-w-2xl md:max-w-4xl ml-6 sm:ml-10 md:ml-20 mt-24 sm:mt-28 md:mt-32">
-            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold wow animate__animated animate__fadeInUp"
+                data-wow-duration="1.5s" data-wow-delay="0.5s">
                 BATA RINGAN & MORTAR TERBAIK
             </h1>
-            <p class="mt-4 text-sm sm:text-lg md:text-xl lg:text-2xl">Produsen Produk Unggulan Terbaik Untuk Rumah &
+            <p class="mt-4 text-sm sm:text-lg md:text-xl lg:text-2xl wow animate__animated animate__fadeInUp"
+                data-wow-duration="1.5s" data-wow-delay="0.5s">Produsen Produk Unggulan Terbaik Untuk Rumah &
                 Bangunan Komersil</p>
             <button
-                class="mt-8 px-4 sm:px-8 py-2 sm:py-3 bg-red-700 text-white text-sm sm:text-lg font-semibold rounded hover:bg-red-600 transition duration-300 outline outline-black outline-4">
+                class="mt-8 px-4 sm:px-8 py-2 sm:py-3 bg-red-700 text-white text-sm sm:text-lg font-semibold rounded hover:bg-red-600 transition duration-300 outline outline-black outline-4 wow animate__animated animate__fadeInUp"
+                data-wow-duration="1.5s" data-wow-delay="0.5s">
                 Contact Us Now!
             </button>
         </div>
@@ -96,7 +110,7 @@
     </section>
 
 
-    <section class="bg-black">
+    <section class="bg-black" id="about">
         <div class="flex justify-center min-h-screen bg-cover bg-center bg-no-repeat relative md:pb-12"
             style="background-image: url('/static/img/karyawanbru.webp');">
             <div class="absolute inset-0 bg-black bg-opacity-70"></div>
@@ -105,19 +119,19 @@
 
                     <div class="relative flex justify-end md:hidden ">
                         <div class="group w-60 h-32 bg-transparent">
-                            <div
-                                class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white">
+                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1.2s" data-wow-delay="0.2s">
                                 <img src="/static/img/pabrik2.webp" alt="pabrik 1">
                             </div>
                         </div>
-                        <div
-                            class="group absolute top-28  right-48 w-36 h-20 bg-white transition-transform duration-300 hover:scale-105 -rotate-6">
+                        <div class="group absolute top-28  right-48 w-36 h-20 bg-white transition-transform duration-300 hover:scale-105 -rotate-6 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.3s" data-wow-delay="0.3s">
                             <div class="group transform shadow-lg bg-white p-2">
                                 <img src="/static/img/pabrik/pabrik11.png" alt="pabrik 1">
                             </div>
                         </div>
-                        <div
-                            class="absolute group top-48 w-36 h-20   bg-white transition-transform duration-300 hover:scale-105 rotate-6">
+                        <div class="absolute group top-48 w-36 h-20   bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.2s" data-wow-delay="0.5s">
                             <div class="group transform shadow-lg bg-white p-2">
                                 <img src="/static/img/pabrik/pabrik12.png" alt="pabrik 1">
                             </div>
@@ -128,7 +142,8 @@
 
                         <h2 class="text-2xl md:text-5xl font-bold text-gray-100 mb-0 md:mb-4"> <span class="typed-text"
                                 data-strings='["TENTANG KAMI.."]'></span></h2>
-                        <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4">
+                        <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.2s" data-wow-delay="0.2s">
                             PT. Bata Ringan Utama adalah pionir dalam produksi AAC Block (Autoclaved Aerated Concrete
                             Block), atau yang lebih dikenal sebagai Beton Ringan (Bata Ringan), serta Dry Mortar (Mortar
                             Instan) di Sumatera Utara. Berlokasi strategis di Kawasan Industri Medan, perusahaan ini
@@ -136,7 +151,8 @@
                             hari.
 
                         </p>
-                        <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4">
+                        <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.3s" data-wow-delay="0.3s">
                             Dengan kemampuan produksi yang tinggi, <br> PT. Bata Ringan Utama siap memastikan pasokan
                             material bata
                             ringan yang andal dan konsisten untuk memenuhi kebutuhan proyek konstruksi Anda.
@@ -146,19 +162,19 @@
 
                     <div class="relative flex justify-end hidden md:flex">
                         <div class="group w-48 h-32 lg:w-80 lg:h-56 bg-transparent mt-0 md:-mt-20">
-                            <div
-                                class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white">
+                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1.5s" data-wow-delay="0.2s">
                                 <img src="/static/img/pabrik2.webp" alt="pabrik 1">
                             </div>
                         </div>
-                        <div
-                            class="group absolute top-28 left-8 lg:left-28 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 -rotate-2">
+                        <div class="group absolute top-28 left-8 lg:left-28 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 -rotate-2 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <div class="group transform shadow-lg bg-white p-4">
                                 <img src="/static/img/pabrik/pabrik11.png" alt="pabrik 1">
                             </div>
                         </div>
-                        <div
-                            class="absolute group top-52 left-0 lg:left-96 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 rotate-6">
+                        <div class="absolute group top-52 left-0 lg:left-96 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.5s">
                             <div class="group transform shadow-lg bg-white p-4">
                                 <img src="/static/img/pabrik/pabrik12.png" alt="pabrik 1">
                             </div>
@@ -169,19 +185,22 @@
         </div>
     </section>
 
-    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen">
+    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen" id="produk">
         <!-- <div class="absolute inset-0 bg-black bg-opacity-70"></div> -->
-        <div class="flex justify-center">
+        <div class="flex justify-center wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
+            data-wow-delay="0.3s">
 
             <h2 class="text-white text-center text-lg md:text-3xl font-bold z-[999] mb-0 md:mb-8">Temukan berbagai
                 kebutuhan produk material
                 anda di<span class="text-red-500"> BRU MORTAR</span></h2>
         </div>
 
-        <div class="container mx-auto z-[999]">
+        <div class="container mx-auto z-[999] wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
+            data-wow-delay="0.3s">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 relative">
                 <!-- Waste Treatment -->
+
                 <div class="relative group md:mr-4">
                     <img src="/static/img/bataringan3.jpg" alt="BATA RINGAN"
                         class="w-full h-64 md:h-4/6 object-cover opacity-80 group-hover:opacity-90 transition duration-500 ease-in-out  clip-triangle-left">
@@ -230,7 +249,8 @@
     <section class="flex flex-col md:flex-row min-h-screen bg-slate-900 py-8">
         <!-- Left Section -->
         <div class="w-full md:w-1/2 text-white max-h-screen">
-            <div class="bg-white bg-opacity-10 pl-8 pr-8 relative z-10 mr-8 ml-8 rounded-lg py-2">
+            <div class="bg-white bg-opacity-10 pl-8 pr-8 relative z-10 mr-8 ml-8 rounded-lg py-2 wow animate__animated animate__fadeInUp"
+                data-wow-duration="1.5s" data-wow-delay="0.5s">
                 <h2 class="text-3xl font-bold text-white mb-6 text-center">Kenapa Memilih Kami</h2>
                 <div class=" md:hidden flex grid grid-cols-2 gap-2">
                     <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -238,7 +258,8 @@
                             <i class="fas fa-leaf text-xl"></i> <!-- Ikon ramah lingkungan -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center">Produk Berkualitas & Ramah Lingkungan</h3>
+                            <h3 class="text-xs font-semibold text-white text-center">Produk Berkualitas & Ramah
+                                Lingkungan</h3>
                         </div>
                     </div>
                     <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md ">
@@ -246,7 +267,8 @@
                             <i class="fas fa-chalkboard-teacher text-xl"></i> <!-- Ikon edukasi -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center">Melakukan Edukasi Penggunaan Bata ringan Utama
+                            <h3 class="text-xs font-semibold text-white text-center">Melakukan Edukasi Penggunaan Bata
+                                ringan Utama
                                 dan Produk Mortar</h3>
                         </div>
                     </div>
@@ -255,7 +277,8 @@
                             <i class="fas fa-tools text-xl"></i> <!-- Ikon pelayanan teknis -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center">Memberikan Pelayanan Teknis Material </h3>
+                            <h3 class="text-xs font-semibold text-white text-center">Memberikan Pelayanan Teknis
+                                Material </h3>
                         </div>
                     </div>
                     <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -263,7 +286,8 @@
                             <i class="fas fa-tools text-xl"></i> <!-- Ikon pelayanan teknis -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center"> Memberi Edukasi Pekerja dan Pengawasan Dalam Pemasangan</h3>
+                            <h3 class="text-xs font-semibold text-white text-center"> Memberi Edukasi Pekerja dan
+                                Pengawasan Dalam Pemasangan</h3>
                         </div>
                     </div>
                     <div class="flex flex-col items-center p-4 bg-orange-500 rounded-lg shadow-md">
@@ -271,7 +295,8 @@
                             <i class="fas fa-cogs text-xl"></i> <!-- Ikon teknologi -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center">Manajemen Pabrik Senantiasa Mempertahankan
+                            <h3 class="text-xs font-semibold text-white text-center">Manajemen Pabrik Senantiasa
+                                Mempertahankan
                                 Kualitas Produk</h3>
                         </div>
                     </div>
@@ -280,12 +305,14 @@
                             <i class="fas fa-clock text-xl"></i> <!-- Ikon responsif -->
                         </span>
                         <div>
-                            <h3 class="text-xs font-semibold text-white text-center">Senantiasa Memberikan Respon Cepat Kepada Client </h3>
+                            <h3 class="text-xs font-semibold text-white text-center">Senantiasa Memberikan Respon Cepat
+                                Kepada Client </h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-4 hidden md:block">
+                <div class="space-y-4 hidden md:block wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"
+                    data-wow-delay="0.5s">
                     <div class="flex items-center p-4 bg-orange-500 rounded-lg shadow-md">
                         <span class="text-white mr-4">
                             <i class="fas fa-leaf text-3xl"></i> <!-- Ikon ramah lingkungan -->
@@ -333,7 +360,8 @@
 
             </div>
         </div>
-        <div class="w-full md:w-1/2 lg:w-2/3 bg-orange-500 p-8 relative mt-8 md:mt-0 hidden md:block">
+        <div class="w-full md:w-1/2 lg:w-2/3 bg-orange-500 p-8 relative mt-8 md:mt-0 hidden md:block wow animate__animated animate__fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.2s">
             <img src="/static/img/pabrik2.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
         </div>
     </section>
@@ -342,7 +370,9 @@
 
     </section>
 
-    <section class="bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900 text-white py-16 ">
+    <section
+        class="bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900 text-white py-16 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.2s" data-wow-delay="0.3s">
         <div class="container mx-auto text-center mb-12">
             <h1 class="text-4xl font-extrabold text-orange-500">BATA RINGAN</h1>
         </div>
@@ -354,7 +384,8 @@
             <!-- Left Section (Text Section for Mobile, Right Section for Desktop) -->
             <div class="lg:w-1/3 text-center lg:text-right mb-8 lg:mb-0 mt-0 md:mt-8">
                 <h2 class="text-2xl font-bold text-orange-500 mb-4 mr-0 md:mr-4">LEBIH EKONOMIS</h2>
-                <p class="mb-4 p-4 text-justify"> Penggunaan Bata Ringan pada bangunan dapat menghemat waktu, tenaga, dan biaya. Produk
+                <p class="mb-4 p-4 text-justify"> Penggunaan Bata Ringan pada bangunan dapat menghemat waktu, tenaga,
+                    dan biaya. Produk
                     ini tidak hanya ringan tetapi mudah dipasang karena ukuran yang presisi. </p>
 
             </div>
@@ -367,15 +398,19 @@
             <!-- Right Section (Text Section for Desktop) -->
             <div class="lg:w-1/3 text-center lg:text-left">
                 <h2 class="text-2xl font-bold text-orange-500 mb-4 pl-0 md:pl-4">DAYA TAHAN TINGGI</h2>
-                <p class="mb-4 p-4 text-justify">Memiliki daya tahan tinggi yang mengurangi biaya perawatan jangka panjang.</p>
+                <p class="mb-4 p-4 text-justify">Memiliki daya tahan tinggi yang mengurangi biaya perawatan jangka
+                    panjang.</p>
                 <p> </p>
             </div>
         </div>
     </section>
 
     <section class="bg-gray-900 text-white py-12">
-        <h2 class="text-xl md:text-4xl font-bold text-center text-white mb-12 px-4">Mengapa Harus Menggunakan <span class="text-orange-500">BATA RINGAN BRU</span> ?</h2>
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+        <h2 class="text-xl md:text-4xl font-bold text-center text-white mb-12 px-4 wow animate__animated animate__fadeInUp"
+            data-wow-duration="1.2s" data-wow-delay="0.3s">Mengapa Harus Menggunakan <span class="text-orange-500">BATA
+                RINGAN BRU</span> ?</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 wow animate__animated animate__fadeInUp"
+            data-wow-duration="1.2s" data-wow-delay="0.3s">
             <!-- Lebih Ringan -->
             <div class="border border-gray-800 p-6 text-center transform transition duration-300 hover:scale-105">
                 <div class="flex justify-center items-center mb-4">
@@ -465,29 +500,33 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
                 <!-- Product 1 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-1 ">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-1 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/acian_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover object-center rounded-t items-center">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">ACIAN<span class="font-extrabold"> </span></h2>
-                            <div class="flex flex-col md:flex-row space-x-4  pt-2">
-                                <ul class="list-disc space-y-2 text-xs md:text-md">
-                                    <p class="font-semibold">★ Daya rekat sangat <span class="font-extrabold">BAIK</span></p>
-                                    <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Warna lebih <span class="font-extrabold">TERANG</span></p>
-                                    <p class="font-extrabold">★ Hemat<span class="font-semibold"> pemakaian cat</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">ACIAN<span class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Daya rekat sangat <span class="font-extrabold">BAIK</span>
+                                </p>
+                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Warna lebih <span class="font-extrabold">TERANG</span></p>
+                                <p class="font-extrabold">★ Hemat<span class="font-semibold"> pemakaian cat</span></p>
+                            </ul>
                         </div>
-                            
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+
+
+                    </div>
+
+
                     <!-- <div class="p-4 text-center">
                         <p class="text-xs text-red-500 font-semibold tracking-wider mb-1">MORTAR</p>
                         <h2 class="text-3xl font-bold">ACIAN<span class="font-light"> </span></h2>
@@ -495,123 +534,136 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-2">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-2 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/acianbeton_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">ACIAN BETON<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-2  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
-                                    <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Tidak perlu pakai <span class="font-extrabold">Pasir</span></p>
-                                    <p class="font-extrabold">★ Kualitas<span class="font-semibold"> terjamin</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">ACIAN BETON<span class="font-extrabold"></span>
+                        </h2>
+                        <div class="flex flex-col md:flex-row md:space-x-2 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
+                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Tidak perlu pakai <span class="font-extrabold">Pasir</span>
+                                </p>
+                                <p class="font-extrabold">★ Kualitas<span class="font-semibold"> terjamin</span></p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+
+
+                    </div>
+
                 </div>
                 <!-- Product 3 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-3">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-3 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/tile_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">TILE ADHESIVE<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-4  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
-                                    <p class="font-semibold">★ Lebih<span class="font-extrabold"> Praktis</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
-                                    <p class="font-semibold">★ Lebih tahan<span class="font-extrabold"> Susut</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">TILE ADHESIVE<span
+                                class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ Lebih<span class="font-extrabold"> Praktis</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
+                                <p class="font-semibold">★ Lebih tahan<span class="font-extrabold"> Susut</span></p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+                    </div>
+
                 </div>
                 <!-- Product 4 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 order-4">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 order-4 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <img src="/static/img/produk/render_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">RENDER<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-4  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-semibold">★ Plester sekaligus acian<span class="font-extrabold"></span></p>
-                                    <p class="font-semibold">★ Siap <span class="font-extrabold">Pakai</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ lebih <span class="font-extrabold">Awet</span></p>
-                                    <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">RENDER<span class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Plester sekaligus acian<span class="font-extrabold"></span>
+                                </p>
+                                <p class="font-semibold">★ Siap <span class="font-extrabold">Pakai</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ lebih <span class="font-extrabold">Awet</span></p>
+                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+                    </div>
+
                 </div>
                 <!-- Product 5 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-5">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-5 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 rounded">SOLD</div> -->
                     <img src="/static/img/produk/plester_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600 text-center">PLESTER & PASANGAN BATA<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-2  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
-                                    <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Lebih <span class="font-extrabold">Praktis</span></p>
-                                    <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600 text-center">PLESTER & PASANGAN BATA<span
+                                class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-2 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Lebih <span class="font-extrabold">Praktis</span></p>
+                                <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+                    </div>
+
                 </div>
                 <!-- Product 6 -->
-                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-6">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-6 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/perata_produk.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">PERATA LANTAI<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-4  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
-                                    <p class="font-semibold">★ Plester lebih<span class="font-extrabold"> Tipis</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Daya tahan <span class="font-extrabold">Tinggi</span></p>
-                                    <p class="font-semibold">★ Lebih<span class="font-extrabold"> Hemat</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">PERATA LANTAI<span
+                                class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ Plester lebih<span class="font-extrabold"> Tipis</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Daya tahan <span class="font-extrabold">Tinggi</span></p>
+                                <p class="font-semibold">★ Lebih<span class="font-extrabold"> Hemat</span></p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+                    </div>
+
                 </div>
                 <div class="bg-white rounded   hover:shadow-lg transition duration-300 relative order-8">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
@@ -623,29 +675,31 @@
                         <p class="text-sm text-gray-500">NEW</p> -->
                     </div>
                 </div>
-                <div
-                    class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-7 lg:order-8">
+                <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-7 lg:order-8 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="1.2s" data-wow-delay="0s">
                     <!-- <div class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">NEW</div> -->
                     <img src="/static/img/produk/thinbed.webp" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
-                        <div class="flex flex-col items-center ">
-                            <h2 class="text-3xl font-extrabold text-red-600">THINBED<span class="font-extrabold"> </span></h2>
-                            <div class="flex space-x-4  pt-2">
-                                <ul class="list-disc space-y-2 text-md">
-                                    <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
-                                    <p class="font-semibold">★ Adukan lebih<span class="font-extrabold"> Tipis</span></p>
-                                    
-                                </ul>
-                                <ul class="list-disc space-y-2">
-                                    <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
-                                    <p class="font-semibold">★ Hasil lebih<span class="font-extrabold"> rata & rapi</span></p>
-                                </ul>
-                            </div>
-                            <a href="#" class="my-4 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300">
-                                lihat selengkapnya >
-                            </a>
-                            
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">THINBED<span class="font-extrabold"></span>
+                        </h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ Adukan lebih<span class="font-extrabold"> Tipis</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                                <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
+                                <p class="font-semibold">★ Hasil lebih<span class="font-extrabold"> rata & rapi</span>
+                                </p>
+                            </ul>
                         </div>
+                        <a href="#"
+                            class="my-4 p-1 px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -704,8 +758,9 @@
         </div>
     </section> -->
 
-    <section>
-        <div class="bg-black text-white py-12">
+    <section id="porto">
+        <div class="bg-black text-white py-12 wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
+            data-wow-delay="0.2s">
             <div class="container mx-auto">
                 <h2 class="text-4xl font-bold text-center mb-4">OUR PROJECT</h2>
                 <p class="text-center text-gray-400 mb-8"></p>
@@ -803,7 +858,7 @@
     </script>
 
 
-    <footer class="bg-black text-white ">
+    <footer class="bg-black text-white " id="kontak">
         <div class="container mx-auto   flex flex-wrap justify-center py-12">
             <!-- Logo Section -->
             <div class="w-full md:w-1/4 flex justify-center">
@@ -919,11 +974,46 @@
     </script>
     <!-- skrip untuk hamburger -->
     <script>
-        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
-            var mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            // Function to toggle the mobile menu
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                // Toggle the color of the button between white and black
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            // Add event listeners to each link in the mobile menu
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Close the mobile menu when a link is clicked
+                    toggleMenu();
+                });
+            });
         });
+
+
+
+
     </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
