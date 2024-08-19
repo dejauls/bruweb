@@ -95,8 +95,8 @@
     <section class="hero-bg relative flex items-center h-[100vh] sm:h-[100vh] md:h-screen">
         <div class="overlay absolute inset-0"></div>
         <div
-            class="relative z-20 text-left text-white max-w-xl sm:max-w-2xl md:max-w-4xl ml-6 sm:ml-10 md:ml-20 mt-24 sm:mt-28 md:mt-32">
-            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold wow animate__animated animate__fadeInUp"
+            class="relative z-20 text-center md:text-left text-white max-w-xl sm:max-w-2xl md:max-w-4xl ml-6 sm:ml-10 md:ml-20 mt-24 sm:mt-28 md:mt-32">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold wow animate__animated animate__fadeInUp"
                 data-wow-duration="1.5s" data-wow-delay="0.5s">
                 BATA RINGAN & MORTAR TERBAIK
             </h1>
@@ -120,12 +120,12 @@
 
     <section class="bg-black" id="about">
         <div class="flex justify-center min-h-screen bg-cover bg-center bg-no-repeat relative md:pb-12"
-            style="background-image: url('/static/img/karyawanbru.webp');">
+            style="background-image: url('/static/img/karyawanbru.webp');">>
             <div class="absolute inset-0 bg-black bg-opacity-70"></div>
             <div class="container mx-auto p-12 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2   items-center ">
 
-                    <div class="relative flex justify-end md:hidden ">
+                    <div class="relative flex justify-end -mr-8 md:hidden ">
                         <div class="group w-60 h-32 bg-transparent">
                             <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white wow animate__animated animate__fadeInUp"
                                 data-wow-duration="1.2s" data-wow-delay="0.2s">
@@ -193,7 +193,55 @@
         </div>
     </section>
 
-    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen" id="produk">
+    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen md:hidden" id="produk">
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-70"></div> -->
+        <div class="flex justify-center wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
+            data-wow-delay="0.3s">
+
+            <h2 class="text-white text-center text-lg md:text-3xl font-bold z-[999] mb-0 md:mb-8">Temukan berbagai
+                kebutuhan produk material
+                anda di<span class="text-red-500"> BRU MORTAR</span></h2>
+        </div>
+
+        <div class="container mx-auto z-[999] wow animate__animated animate__fadeInUp " data-wow-duration="1.2s"
+            data-wow-delay="0.3s">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 relative">
+                <!-- Waste Treatment -->
+
+                <div class="relative group md:mr-4">
+                    <img src="/static/img/bataringan3.jpg" alt="BATA RINGAN"
+                        class="w-full h-64 md:h-4/6 object-cover opacity-80 group-hover:opacity-90 transition duration-500 ease-in-out ">
+                    <div class="absolute inset-0 bg-transparent bg-opacity-30  transition duration-500 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center  text-center p-4 mt-20">
+                        <div class="w-16 h-16 rounded-full border-4 border-white flex items-center justify-center mb-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-4xl font-bold   drop-shadow-2xl">BATA RINGAN</h3>
+
+                    </div>
+                </div>
+
+                <!-- Recycling Equipment -->
+                <div class="relative group -ml-8">
+                    <img src="/static/img/produk/fotosemenbru.webp" alt="MORTAR PRODUCT"
+                        class="w-full h-64 md:h-4/6 object-cover  opacity-80 group-hover:opacity-100 transition duration-500 ease-in-out  ">
+                    <div class="absolute inset-0 bg-transparent  bg-opacity-30   transition duration-500 ease-in-out">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center text-center p-4 mt-20">
+                        <div class="w-16 h-16 rounded-full border-4 border-white flex items-center justify-center mb-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-4xl font-bold shadow-lg bg-black/10 ml-8">MORTAR PRODUCT</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen hidden md:block" id="produk">
         <!-- <div class="absolute inset-0 bg-black bg-opacity-70"></div> -->
         <div class="flex justify-center wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
             data-wow-delay="0.3s">
@@ -519,11 +567,11 @@
                             <ul class="list-disc space-y-2 text-xs md:text-base">
                                 <p class="font-semibold">★ Daya rekat sangat <span class="font-extrabold">BAIK</span>
                                 </p>
-                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                                <p class="font-semibold ">★ <span class="font-extrabold ">Meminimalisir </span><span class="font-semibold"> retakan</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Warna lebih <span class="font-extrabold">TERANG</span></p>
-                                <p class="font-extrabold">★ Hemat<span class="font-semibold"> pemakaian cat</span></p>
+                                <p class="font-semibold">★ <span class=" font-extrabold"> Hemat </span><span class="font-semibold"> pemakaian cat</span></p>
                             </ul>
                         </div>
                         <a href="/acian"
@@ -553,12 +601,12 @@
                         <div class="flex flex-col md:flex-row md:space-x-2 pt-2">
                             <ul class="list-disc space-y-2 text-xs md:text-base">
                                 <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
-                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Meminimalisir</span> <span class="font-semibold"> retakan</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Tidak perlu pakai <span class="font-extrabold">Pasir</span>
                                 </p>
-                                <p class="font-extrabold">★ Kualitas<span class="font-semibold"> terjamin</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Kualitas </span> <span class="font-semibold">terjamin</span></p>
                             </ul>
                         </div>
                         <a href="/acianbeton"
@@ -581,10 +629,10 @@
                                 class="font-extrabold"></span></h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-xs md:text-base">
-                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Mudah</span>  <span class="font-semibold">digunakan</span></p>
                                 <p class="font-semibold">★ Lebih<span class="font-extrabold"> Praktis</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
                                 <p class="font-semibold">★ Lebih tahan<span class="font-extrabold"> Susut</span></p>
                             </ul>
@@ -609,9 +657,9 @@
                                 </p>
                                 <p class="font-semibold">★ Siap <span class="font-extrabold">Pakai</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ lebih <span class="font-extrabold">Awet</span></p>
-                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Meminimalisir</span> <span class="font-semibold"> retakan</span></p>
                             </ul>
                         </div>
                         <a href="/render"
@@ -632,10 +680,10 @@
                                 class="font-extrabold"></span></h2>
                         <div class="flex flex-col md:flex-row md:space-x-2 pt-2">
                             <ul class="list-disc space-y-2 text-xs md:text-base">
-                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
-                                <p class="font-extrabold">★ Meminimalisir<span class="font-semibold"> retakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Mudah</span>  <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Meminimalisir</span> <span class="font-semibold"> retakan</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Lebih <span class="font-extrabold">Praktis</span></p>
                                 <p class="font-semibold">★ Pemakaian lebih <span class="font-extrabold">Hemat</span></p>
                             </ul>
@@ -658,10 +706,10 @@
                                 class="font-extrabold"></span></h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-xs md:text-base">
-                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Mudah</span>  <span class="font-semibold">digunakan</span></p>
                                 <p class="font-semibold">★ Plester lebih<span class="font-extrabold"> Tipis</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Daya tahan <span class="font-extrabold">Tinggi</span></p>
                                 <p class="font-semibold">★ Lebih<span class="font-extrabold"> Hemat</span></p>
                             </ul>
@@ -693,10 +741,10 @@
                         </h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-xs md:text-base">
-                                <p class="font-extrabold">★ Mudah <span class="font-semibold">digunakan</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Mudah</span>  <span class="font-semibold">digunakan</span></p>
                                 <p class="font-semibold">★ Adukan lebih<span class="font-extrabold"> Tipis</span></p>
                             </ul>
-                            <ul class="list-disc space-y-2 text-xs md:text-base">
+                            <ul class="list-disc space-y-2 text-xs md:text-base mt-2 md:mt-0">
                                 <p class="font-semibold">★ Daya rekat <span class="font-extrabold">Tinggi</span></p>
                                 <p class="font-semibold">★ Hasil lebih<span class="font-extrabold"> rata & rapi</span>
                                 </p>
