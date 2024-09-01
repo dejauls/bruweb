@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'brucolor': '#FA622B',
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Replace 'sans' with your preferred key if needed
+      },
     },
   },
   plugins: [],
