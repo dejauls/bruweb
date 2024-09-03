@@ -14,6 +14,10 @@ def acian():
 def acianbeton():
     return render_template('acianbeton.html')
 
+@app.route('/betoninstan')
+def betoninstan():
+    return render_template('betoninstan.html')
+
 @app.route('/perata')
 def perata():
     return render_template('perata.html')
@@ -21,6 +25,10 @@ def perata():
 @app.route('/plester')
 def plester():
     return render_template('plester.html')
+
+@app.route('/pasanganbata')
+def plesterbata():
+    return render_template('plesterbata.html')
 
 @app.route('/render')
 def render():
@@ -34,5 +42,9 @@ def thinded():
 def tile():
     return render_template('tile.html')
 
+@app.route('/tileontile')
+def tileontile():
+    return render_template('tileontile.html')
+
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port='8989')
