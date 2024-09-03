@@ -46,5 +46,9 @@ def tile():
 def tileontile():
     return render_template('tileontile.html')
 
+@app.route('/granite')
+def granite():
+    return render_template('granite.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port='8989')
