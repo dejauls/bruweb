@@ -17,7 +17,7 @@
 
     <style>
         .hero-bg {
-            background-image: url('/static/img/pabbk.png');
+            background-image: url('/static/img/depanp.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -31,6 +31,12 @@
         @media (min-width: 768px) {
             .hero-bg {
                 height: 100vh;
+            }
+        }
+
+        @media (max-width: 639px) {
+            .hero-bg {
+                background-position: right;
             }
         }
 
@@ -57,8 +63,8 @@
 
     <!-- Navbar -->
     <nav
-        class="flex items-center justify-between p-1 md:p-6 w-full z-20 bg-gradient-to-b from-stone-100/50 to-transparent  fixed md:absolute top-0">
-        <div class="flex items-center md:space-x-4 ml-0 md:ml-4">
+        class="flex items-center justify-between p-1 md:p-6 w-full z-20 bg-gradient-to-b from-black to-transparent  fixed md:absolute top-0">
+        <div class="flex items-center md:space-x-4 ml-0 md:ml-4 md:-mt-4">
             <a href="/">
                 <img src="/static/img/logobadakbru.png" alt="Logo" class="h-16 sm:h-24 md:h-28">
             </a>
@@ -67,12 +73,12 @@
             </a>
         </div>
 
-        <div class="hidden md:flex space-x-6 font-bold mr-12">
-            <a href="/" class="text-white text-sm sm:text-xl">HOME</a>
-            <a href="#about" class="text-white text-sm sm:text-xl">ABOUT US</a>
-            <a href="#product" class="text-white text-sm sm:text-xl">PRODUCT</a>
-            <a href="#porto" class="text-white text-sm sm:text-xl">PROJECT</a>
-            <a href="#kontak" class="text-white text-sm sm:text-xl">CONTACT</a>
+        <div class="hidden md:flex space-x-6 font-bold mr-12 -mt-4">
+            <a href="/" class="text-white text-sm sm:text-xl transition-transform duration-500 hover:scale-125">HOME</a>
+            <a href="#about" class="text-white text-sm sm:text-xl transition-transform duration-500 hover:scale-125">ABOUT US</a>
+            <a href="#product" class="text-white text-sm sm:text-xl transition-transform duration-500 hover:scale-125">PRODUCT</a>
+            <a href="#porto" class="text-white text-sm sm:text-xl transition-transform duration-500 hover:scale-125">PROJECT</a>
+            <a href="#kontak" class="text-white text-sm sm:text-xl transition-transform duration-500 hover:scale-125">CONTACT</a>
         </div>
         <!-- Mobile Menu (Hidden by default, shown on small screens) -->
         <div class="md:hidden flex items-center mr-4">
@@ -97,16 +103,14 @@
         </div>
     </nav>
 
-
-
-    <!-- Mobile Menu Dropdown -->
-
-
     <!-- Hero Section -->
-    <section class="hero-bg relative flex items-center h-[100vh] sm:h-[100vh] md:h-screen">
+    <section class="hero-bg relative flex items-center h-[100vh] sm:h-[100vh] md:h-screen ">
         <div class="overlay absolute inset-0"></div>
         <div
-            class="relative z-10 text-center md:text-left text-white max-w-xl sm:max-w-2xl md:max-w-4xl ml-6 sm:ml-10 md:ml-20 mt-24 sm:mt-28 md:mt-32">
+            class="relative z-10 text-center md:text-left text-white max-w-xl sm:max-w-2xl md:max-w-4xl mx-4 sm:ml-10 md:ml-20 mt-8 sm:mt-36 md:mt-44">
+            <div class="  flex justify-center mb-8 lg:mb-0 m-4 bg-transparent rounded-lg sm:hidden">
+                <img src="/static/img/Bata-ringanpng.png" alt="Bata Ringan" class="w-full h-auto rounded-lg">
+            </div>
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold wow animate__animated animate__fadeInUp"
                 data-wow-duration="1.5s" data-wow-delay="0.5s">
                 BATA RINGAN & MORTAR TERBAIK
@@ -136,34 +140,35 @@
             <div class="container mx-auto p-12 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2   items-center ">
 
-                    <div class="relative flex justify-end -mr-8 md:hidden ">
+                    <div class="relative flex justify-end -mr-8 md:hidden">
                         <div class="group w-60 h-32 bg-transparent">
-                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white wow animate__animated animate__fadeInUp"
+                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-4 bg-white   wow animate__animated animate__fadeInUp"
                                 data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                <img src="/static/img/pabrik2.webp" alt="pabrik 1">
+                                <img src="/static/img/pabrik/pabrikdepan.png" alt="pabrik 1">
                             </div>
                         </div>
-                        <div class="group absolute top-28  right-48 w-36 h-20 bg-white transition-transform duration-300 hover:scale-105 -rotate-6 wow animate__animated animate__fadeInUp"
+                        <div class="group absolute top-28  right-32 w-52 h-32 bg-white transition-transform duration-300 hover:scale-105 -rotate-6 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.3s" data-wow-delay="0.3s">
                             <div class="group transform shadow-lg bg-white p-2">
-                                <img src="/static/img/pabrikkl.png" alt="pabrik 1">
+                                <img src="/static/img/mobilbata.jpg" alt="pabrik 1">
                             </div>
                         </div>
-                        <div class="absolute group top-48 w-36 h-20   bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
+                        <div class="absolute group top-44 w-44 h-28 bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.2s" data-wow-delay="0.5s">
                             <div class="group transform shadow-lg bg-white p-2">
-                                <img src="/static/img/pabrik/pabrik12.png" alt="pabrik 1">
+                                <img src="/static/img/pabrik/krubaru.png" alt="pabrik 1">
                             </div>
                         </div>
                     </div>
                     <!-- Text Section -->
-                    <div class="text-between lg:text-left pt-64 md:pt-8  ">
+                    <div class="text-between lg:text-left pt-52 md:pt-8  ">
 
                         <h2 class="text-2xl md:text-5xl font-bold text-gray-100 mb-0 md:mb-4"> <span class="typed-text"
                                 data-strings='["TENTANG KAMI.."]'></span></h2>
                         <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.2s" data-wow-delay="0.2s">
-                            PT. Bata Ringan Utama adalah pionir dalam produksi AAC Block (Autoclaved Aerated Concrete
+                            <span class="font-bold">PT. Bata Ringan Utama</span> adalah pionir dalam produksi AAC Block
+                            (Autoclaved Aerated Concrete
                             Block), atau yang lebih dikenal sebagai Beton Ringan (Bata Ringan), serta Dry Mortar (Mortar
                             Instan) di Sumatera Utara. Berlokasi strategis di Kawasan Industri Medan, perusahaan ini
                             menjadi yang pertama di wilayah tersebut dengan kapasitas produksi yang mencapai 400m³ per
@@ -172,7 +177,8 @@
                         </p>
                         <p class="text-gray-100 text-sm md:text-xl leading-relaxed pt-4 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.3s" data-wow-delay="0.3s">
-                            Dengan kemampuan produksi yang tinggi, <br> PT. Bata Ringan Utama siap memastikan pasokan
+                            Dengan kemampuan produksi yang tinggi, <br> <span class="font-bold">PT. Bata Ringan
+                                Utama</span> siap memastikan pasokan
                             material bata
                             ringan yang andal dan konsisten untuk memenuhi kebutuhan proyek konstruksi Anda.
                         </p>
@@ -181,21 +187,21 @@
 
                     <div class="relative flex justify-end hidden md:flex">
                         <div class="group w-48 h-32 lg:w-80 lg:h-56 bg-transparent mt-0 md:-mt-20">
-                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-3 bg-white wow animate__animated animate__fadeInUp"
+                            <div class="group transform shadow-lg transition-transform duration-300 hover:scale-105 p-2 md:p-2 bg-gray-100 wow animate__animated animate__fadeInUp"
                                 data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <img src="/static/img/pabrik2.webp" alt="pabrik 1">
+                                <img src="/static/img/pabrik/pabrikdepan.png" alt="pabrik 1">
                             </div>
                         </div>
-                        <div class="group absolute top-28 left-8 lg:left-28 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 -rotate-2 wow animate__animated animate__fadeInUp"
+                        <div class="group absolute top-24 left-8 lg:left-28 w-48 h-32 lg:w-72 lg:h-40 bg-white transition-transform duration-300 hover:scale-105 -rotate-2 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <div class="group transform shadow-lg bg-white p-3">
-                                <img src="/static/img/pabrikkl.png" alt="pabrik 1">
+                            <div class="group transform shadow-lg bg-white p-2">
+                                <img src="/static/img/mobilbata.jpg" alt="pabrik 1">
                             </div>
                         </div>
-                        <div class="absolute group top-52 left-0 lg:left-96 w-48 h-32 lg:w-52 lg:h-32 bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
+                        <div class="absolute group top-48 left-0 lg:left-80 w-48 h-32 lg:w-64 lg:h-36 bg-white transition-transform duration-300 hover:scale-105 rotate-6 wow animate__animated animate__fadeInUp"
                             data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <div class="group transform shadow-lg bg-white p-3">
-                                <img src="/static/img/kang.png" alt="pabrik 1">
+                            <div class="group transform shadow-lg bg-white p-2">
+                                <img src="/static/img/pabrik/krubaru.png" alt="pabrik 1">
                             </div>
                         </div>
                     </div>
@@ -223,7 +229,7 @@
                         class="w-full h-64 md:h-4/6 object-cover opacity-80 group-hover:opacity-90 transition duration-500 ease-in-out ">
                     <div class="absolute inset-0 bg-transparent bg-opacity-30  transition duration-500 ease-in-out">
                     </div>
-                    <div class="absolute inset-0 flex flex-col items-center  text-center p-4 mt-16">
+                    <div  class="absolute inset-0 flex flex-col items-center  text-center p-4 mt-16">
                         <div class="w-16 h-16 rounded-full border-4 border-white flex items-center justify-center mb-4">
                             <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
                         </div>
@@ -232,11 +238,11 @@
                 </div>
 
                 <div class="relative group -ml-8" onclick="window.location.href='#mortarrr';"></div>
-                    <img src="/static/img/profduk.png" alt="MORTAR PRODUCT"
+                    <img onclick="window.location.href='#mortarrr';" src="/static/img/produk/baruproduk.webp" alt="MORTAR PRODUCT"
                         class="w-full h-64 md:h-4/6 object-cover  opacity-80 group-hover:opacity-100 transition duration-500 ease-in-out  ">
-                    <div class="absolute inset-0 bg-transparent  bg-opacity-30   transition duration-500 ease-in-out">
+                    <div  class="absolute inset-0 bg-transparent  bg-opacity-30   transition duration-500 ease-in-out">
                     </div>
-                    <div class="absolute inset-0 flex flex-col items-center  text-center p-4 mt-72">
+                    <div onclick="window.location.href='#mortarrr';" class="absolute inset-0 flex flex-col items-center  text-center p-4 mt-72">
                         <div class="w-16 h-16 rounded-full border-4 border-white flex items-center justify-center mb-4">
                             <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
                         </div>
@@ -247,7 +253,8 @@
         </div>
     </section>
 
-    <section class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen hidden md:block" id="product">
+    <section id="section-2" class="bg-gray-900 text-white py-4 md:py-12 relative md:max-h-screen hidden md:block"
+        id="product">
         <!-- <div class="absolute inset-0 bg-black bg-opacity-70"></div> -->
         <div class="flex justify-center wow animate__animated animate__fadeInUp" data-wow-duration="1.2s"
             data-wow-delay="0.3s">
@@ -261,7 +268,6 @@
             data-wow-delay="0.3s">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 relative">
-                <!-- Waste Treatment -->
 
                 <div class="relative group md:mr-4" onclick="window.location.href='#bataringann';">
                     <img src="/static/img/bataringan3.jpg" alt="BATA RINGAN"
@@ -279,7 +285,7 @@
 
                 <!-- Recycling Equipment -->
                 <div class="relative group -ml-8" onclick="window.location.href='#mortarrr';">
-                    <img src="/static/img/profduk.png" alt="MORTAR PRODUCT"
+                    <img src="/static/img/produk/baruproduk.webp" alt="MORTAR PRODUCT"
                         class="w-full h-64 md:h-4/6 object-cover  opacity-80 group-hover:opacity-100 transition duration-500 ease-in-out  clip-triangle-right">
                     <div class="absolute inset-0 bg-transparent  bg-opacity-30   transition duration-500 ease-in-out">
                     </div>
@@ -424,7 +430,8 @@
         </div>
         <div class="w-full md:w-1/2 lg:w-2/3 bg-orange-500 p-8 relative mt-8 md:mt-0 hidden md:block wow animate__animated animate__fadeInUp"
             data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="/static/img/pabrik2.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <img src="/static/img/batabru.png" alt=""
+                class="absolute inset-0 w-full h-full object-cover object-left">
         </div>
     </section>
 
@@ -539,13 +546,13 @@
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm">
                                 <p class="font-semibold">★ <span class=" font-extrabold"> Hemat </span><span
-                                    class="font-semibold"> pemakaian cat</span></p>
+                                        class="font-semibold"> pemakaian cat</span></p>
                                 <p class="font-semibold ">★ <span class="font-extrabold ">Meminimalisir </span><span
                                         class="font-semibold"> retakan</span></p>
                             </ul>
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm mt-2 md:mt-0">
                                 <p class="font-semibold">★ Warna lebih <span class="font-extrabold">TERANG</span></p>
-                                
+
                                 <p class="font-semibold">★ Daya rekat sangat <span class="font-extrabold">BAIK</span>
                                 </p>
                             </ul>
@@ -562,31 +569,31 @@
 
                 <!-- Product 2 -->
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 order-2 wow animate__animated animate__fadeInUp"
-                data-wow-duration="1.2s" data-wow-delay="0s">
-                <img src="/static/img/produk/rendernew1.png" alt="Product Image"
-                    class="w-full h-40 md:h-80 object-cover rounded-t">
-                <div class="flex flex-col items-center">
-                    <h2 class="text-3xl font-extrabold text-red-600">RENDER<span class="font-extrabold"></span></h2>
-                    <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
-                        <ul class="list-disc space-y-2 text-[10px] md:text-sm">
-                            <p class="font-semibold">★ Plester sekaligus acian<span class="font-extrabold"></span>
-                            </p>
-                            <p class="font-semibold">★ Siap <span class="font-extrabold">Pakai</span></p>
-                        </ul>
-                        <ul class="list-disc space-y-2 text-[10px] md:text-sm mt-2 md:mt-0">
-                            <p class="font-semibold">★ lebih <span class="font-extrabold">Awet</span></p>
-                            <p class="font-semibold">★ <span class="font-extrabold">Meminimalisir</span> <span
-                                    class="font-semibold"> retakan</span></p>
-                        </ul>
+                    data-wow-duration="1.2s" data-wow-delay="0s">
+                    <img src="/static/img/produk/rendernew1.png" alt="Product Image"
+                        class="w-full h-40 md:h-80 object-cover rounded-t">
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-3xl font-extrabold text-red-600">RENDER<span class="font-extrabold"></span></h2>
+                        <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
+                            <ul class="list-disc space-y-2 text-[10px] md:text-sm">
+                                <p class="font-semibold">★ Plester sekaligus acian<span class="font-extrabold"></span>
+                                </p>
+                                <p class="font-semibold">★ Siap <span class="font-extrabold">Pakai</span></p>
+                            </ul>
+                            <ul class="list-disc space-y-2 text-[10px] md:text-sm mt-2 md:mt-0">
+                                <p class="font-semibold">★ lebih <span class="font-extrabold">Awet</span></p>
+                                <p class="font-semibold">★ <span class="font-extrabold">Meminimalisir</span> <span
+                                        class="font-semibold"> retakan</span></p>
+                            </ul>
+                        </div>
+                        <a href="/render"
+                            class="my-4 p-1  mx-2 px-2 md:px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
+                            lihat selengkapnya >
+                        </a>
                     </div>
-                    <a href="/render"
-                        class="my-4 p-1  mx-2 px-2 md:px-4 py-2 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 hover:border-gray-500 transition-colors duration-300 text-xs md:text-base">
-                        lihat selengkapnya >
-                    </a>
+
                 </div>
 
-            </div>
-                
                 <!-- Product 3 -->
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-3 wow animate__animated animate__fadeInUp"
                     data-wow-duration="1.2s" data-wow-delay="0s">
@@ -644,7 +651,7 @@
 
                 </div>
                 <!-- Product 4 -->
-                
+
                 <!-- Product 5 -->
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-5 wow animate__animated animate__fadeInUp"
                     data-wow-duration="1.2s" data-wow-delay="0s">
@@ -672,10 +679,10 @@
                     </div>
 
                 </div>
-                
+
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-6 wow animate__animated animate__fadeInUp"
                     data-wow-duration="1.2s" data-wow-delay="0s">
-                    <img src="/static/img/produk/batamerah.png" alt="Product Image"
+                    <img src="/static/img/produk/plestermerahbaru.png" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
                     <div class="flex flex-col items-center">
                         <h2 class="text-2xl font-extrabold text-red-600 text-center">PASANGAN BATA MERAH & PLESTER<span
@@ -723,8 +730,8 @@
                     </div>
 
                 </div>
-                
-                
+
+
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-8 lg:order-8 wow animate__animated animate__fadeInUp"
                     data-wow-duration="1.2s" data-wow-delay="0s">
                     <img src="/static/img/produk/thinbednew1.png" alt="Product Image"
@@ -756,11 +763,13 @@
                     <img src="/static/img/produk/tileontilenew1.png" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
                     <div class="flex flex-col items-center">
-                        <h2 class="text-3xl font-extrabold text-red-600 text-center">TILE ON TILE<span class="font-extrabold"></span>
+                        <h2 class="text-3xl font-extrabold text-red-600 text-center">TILE ON TILE<span
+                                class="font-extrabold"></span>
                         </h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm">
-                                <p class="font-semibold">★ Siap untuk<span class="font-extrabold"> diaplikasikan </span> </p>
+                                <p class="font-semibold">★ Siap untuk<span class="font-extrabold"> diaplikasikan </span>
+                                </p>
                                 <p class="font-semibold">★ Plester sekaligus acian</p>
                             </ul>
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm mt-2 md:mt-0">
@@ -775,13 +784,14 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded shadow-md hover:shadow-lg transition duration-300 relative order-10 lg:order-8  wow animate__animated animate__fadeInUp"
                     data-wow-duration="1.2s" data-wow-delay="0s">
-                    <img src="/static/img/produk/betoninsnew1.png" alt="Product Image"
+                    <img src="/static/img/produk/terbarubeton.png" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
                     <div class="flex flex-col items-center">
-                        <h2 class="text-3xl font-extrabold text-red-600 text-center">BETON INSTAN<span class="font-extrabold"></span>
+                        <h2 class="text-3xl font-extrabold text-red-600 text-center">BETON INSTAN<span
+                                class="font-extrabold"></span>
                         </h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm">
@@ -807,7 +817,8 @@
                     <img src="/static/img/produk/granitenew.png" alt="Product Image"
                         class="w-full h-40 md:h-80 object-cover rounded-t">
                     <div class="flex flex-col items-center">
-                        <h2 class="text-3xl font-extrabold text-red-600">GRANITE ADHESIVE<span class="font-extrabold"></span>
+                        <h2 class="text-3xl font-extrabold text-red-600">GRANITE ADHESIVE<span
+                                class="font-extrabold"></span>
                         </h2>
                         <div class="flex flex-col md:flex-row md:space-x-4 pt-2">
                             <ul class="list-disc space-y-2 text-[10px] md:text-sm">
@@ -963,7 +974,7 @@
     </section>
 
 
-    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999]">
+    <!-- <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999]">
         <div id="whatsappForm" class="hidden ml-4 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64  ">
             <h2 class="mb-4 font-semibold text-md  ">Halo, Ada yang bisa kami bantu?</h2>
             <textarea id="message"
@@ -1012,6 +1023,85 @@
             }
         });
 
+    </script> -->
+
+    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4"
+        id="whatsappIcon">
+        <div id="whatsappForm"
+            class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64  opacity-0 transform transition-all duration-300 ">
+            <h2 class="mb-4 font-semibold text-md  ">Halo, Ada yang bisa kami bantu?</h2>
+            <textarea id="message"
+                class=" p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40"
+                placeholder="Tulis pesan Anda..."></textarea>
+            <button id="sendButton"
+                class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
+        </div>
+        <button id="whatsappButton"
+            class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg focus:outline-none sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                class="w-8 md:w-12 h-8 md:h-12">
+                <path fill="#fff"
+                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                </path>
+                <path fill="#fff"
+                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                </path>
+                <path fill="#cfd8dc"
+                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                </path>
+                <path fill="#40c351"
+                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                </path>
+                <path fill="#fff" fill-rule="evenodd"
+                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('whatsappButton').addEventListener('click', function () {
+            var form = document.getElementById('whatsappForm');
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+                setTimeout(function () {
+                    form.classList.remove('opacity-0', 'transform', 'translate-y-4');
+                }, 10);
+            } else {
+                form.classList.add('opacity-0', 'transform', 'translate-y-4');
+                setTimeout(function () {
+                    form.classList.add('hidden');
+                }, 300);
+            }
+        });
+
+        document.getElementById('sendButton').addEventListener('click', function () {
+            var message = document.getElementById('message').value;
+            if (message.trim() !== '') {
+                var whatsappURL = 'https://api.whatsapp.com/send?phone=6285260460580&text=' + encodeURIComponent(message);
+                window.open(whatsappURL, '_blank');
+            } else {
+                alert('Pesan tidak boleh kosong');
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            var section2 = document.getElementById('section-2');
+            var whatsappIcon = document.getElementById('whatsappIcon');
+
+
+            var section2Start = section2.offsetTop;
+            var section2Half = section2Start + (section2.offsetHeight / 2);
+
+
+            var scrollPos = window.scrollY + window.innerHeight;
+
+            if (scrollPos > section2Half) {
+                whatsappIcon.classList.remove('opacity-0', 'translate-y-4');
+            } else {
+                whatsappIcon.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
     </script>
 
 
